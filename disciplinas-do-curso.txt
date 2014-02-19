@@ -1,0 +1,55 @@
+Programacao 1, 4, 3, OBRIGATORIA, Convencional, 1, -
+Lab. de Programacao 1, 4, 3, OBRIGATORIA, ComEliminacao, 1, -
+Introducao a Computacao, 4, 3, OBRIGATORIA, Convencional, 1, -
+Calculo Dif. e Int. 1, 4, 3, OBRIGATORIA, Convencional, 1, -
+Algebra Vet. e Geom. Analitica, 4, 3, OBRIGATORIA, Convencional, 1, -
+Leitura e Producao Textual, 4, 3, OBRIGATORIA, Convencional, 1, -
+Matematica Discreta, 4, 3, OBRIGATORIA, Convencional, 1, -
+Gerencia da Informacao, 4, 3, OBRIGATORIA, Convencional, 1, -
+Informatica e Sociedade, 2, 2, OBRIGATORIA, Convencional, 1, -
+Direito e Cidadania, 4, 3, OBRIGATORIA, Convencional, 1, -
+Programacao 2, 4, 3, OBRIGATORIA, Convencional, 1, Programacao 1-Lab. de Programacao 1-Introducao a Computacao
+Lab. de Programacao 2, 4, 5, OBRIGATORIA, ComEliminacao, 1, Programacao 1-Lab. de Programacao 1-Introducao a Computacao
+Teoria dos Grafos, 2, 2, OBRIGATORIA, Convencional, 1, Programacao 1-Lab. de Programacao 1
+Calculo Dif. e Int. 2, 4, 3, OBRIGATORIA, Convencional, 1, Calculo Dif. e Int. 1-
+Fundamentos de Fisica Classica, 4, 4, OBRIGATORIA, ComEliminacao, 1, Calculo Dif. e Int. 1-Algebra Vet. e Geom. Analitica
+Estruturas de Dados e Algoritmos, 4, 3, OBRIGATORIA, Convencional, 1, Lab. de Programacao 2-Programacao 2-Teoria dos Grafos
+Lab. Estruturas de Dados e Algoritmos, 4, 3, OBRIGATORIA, Convencional, 1, Lab. de Programacao 2-Programacao 2-Teoria dos Grafos
+Algebra Linear, 4, 3, OBRIGATORIA, Convencional, 1, Algebra Vet. e Geom. Analitica-
+Probabilidade e Estatistica, 4, 3, OBRIGATORIA, Convencional, 1, Calculo Dif. e Int. 2-
+Teoria da Computacao, 4, 3, OBRIGATORIA, Convencional, 1, Introducao a Computacao-Matematica Discreta-Teoria dos Grafos
+Fundamentos de Fisica Moderna, 4, 4, OBRIGATORIA, ComEliminacao, 1, Calculo Dif. e Int. 2-Fundamentos de Fisica Classica
+Metodos Estatisticos, 4, 3, OBRIGATORIA, Convencional, 1, Algebra Linear-Probabilidade e Estatistica
+Metodologia Cientifica, 4, 3, OBRIGATORIA, Convencional, 1, Metodos Estatisticos-
+Paradigmas de Linguagens de Programacao, 2, 2, OBRIGATORIA, Convencional, 1, Estruturas de Dados e Algoritmos-Lab. Estruturas de Dados e Algoritmos-Teoria da Computacao
+Logica Matematica, 4, 3, OBRIGATORIA, Convencional, 1, Teoria da Computacao-
+Organizacao e Arquit. de Computadores, 4, 3, OBRIGATORIA, Convencional, 1, Estruturas de Dados e Algoritmos-Lab. Estruturas de Dados e Algoritmos-Fundamentos de Fisica Moderna
+Lab. Organ. e Arquit. de Computadores, 4, 4, OBRIGATORIA, Convencional, 1, Estruturas de Dados e Algoritmos-Lab. Estruturas de Dados e Algoritmos-Fundamentos de Fisica Moderna
+Engenharia de Software 1, 4, 3, OBRIGATORIA, Convencional, 1, Lab. de Programacao 2-Programacao 2-Probabilidade e Estatistica
+Sistemas de Informacao 1, 4, 3, OBRIGATORIA, Convencional, 1, Gerencia da Informacao-
+Analise e Tecnicas de Algoritmos, 4, 3, OBRIGATORIA, Convencional, 1, Estruturas de Dados e Algoritmos-Lab. Estruturas de Dados e Algoritmos-Logica Matematica-Calculo Dif. e Int. 2
+Compiladores, 4, 3, OBRIGATORIA, Convencional, 1, Organizacao e Arquit. de Computadores-Lab. Organ. e Arquit. de Computadores-Paradigmas de Linguagens de Programacao
+Redes de Computadores, 4, 3, OBRIGATORIA, Convencional, 1, Organizacao e Arquit. de Computadores-Lab. Organ. e Arquit. de Computadores
+Banco de Dados 1, 4, 3, OBRIGATORIA, Convencional, 1, Sistemas de Informacao 1-
+Sistemas de Informacao 2, 4, 3, OBRIGATORIA, Convencional, 1, Sistemas de Informacao 1-
+Lab. de Engenharia de Software, 2, 2, OBRIGATORIA, Convencional, 1, Engenharia de Software 1-
+Sistemas Operacionais, 4, 3, OBRIGATORIA, Convencional, 1, Organizacao e Arquit. de Computadores-Lab. Organ. e Arquit. de Computadores
+Interconexao de Redes de Computadores, 2, 2, OBRIGATORIA, Convencional, 1, Redes de Computadores-
+Lab. Interc. de Redes de Computadores, 2, 2, OBRIGATORIA, Convencional, 1, Redes de Computadores-
+Banco de Dados 2, 4, 3, OBRIGATORIA, Convencional, 1, Banco de Dados 1-Sistemas de Informacao 2
+Inteligencia Artificial 1, 4, 3, OBRIGATORIA, Convencional, 1, Analise e Tecnicas de Algoritmos-Paradigmas de Linguagens de Programacao-Metodos Estatisticos
+Metodos e Software Numericos, 4, 3, OBRIGATORIA, Convencional, 1, Analise e Tecnicas de Algoritmos-Algebra Linear
+Aval. de Desemp. de Sistemas Discretos, 4, 3, OBRIGATORIA, Convencional, 1, Probabilidade e Estatistica-
+Projeto em Computacao 1, 4, 2, OBRIGATORIA, Convencional, 1, Metodologia Cientifica-Lab. de Engenharia de Software
+Projeto em Computacao 2, 6, 2, OBRIGATORIA, Convencional, 1, Projeto em Computacao 1
+Administracao, 4, 3, OPTATIVA, Convencional, 1, -
+Sociologia Industrial, 3, 2, OPTATIVA, Convencional, 1, -
+Economia, 4, 3, OPTATIVA, Convencional, 1, -
+Futsal, 2, 2, OPTATIVA, Convencional, 1, -
+Basquete, 2, 2, OPTATIVA, Convencional, 1, -
+Calculo Dif. e Int. 3, 5, 4, OPTATIVA, ComEliminacao, 1, Calculo Dif. e Int. 1-Algebra Vet. e Geom. Analitica
+Equacoes Diferenciais, 4, 3, OPTATIVA, Convencional, 1, Algebra Linear-
+Ingles, 4, 4, OPTATIVA, ComEliminacao, 1, -
+Expressao Grafica, 4, 3, OPTATIVA, Convencional, 1, -
+Realidade Virtual, 4, 3, OPTATIVA, Convencional, 1, -
+Empreendedorismo 1, 4, 3, OPTATIVA, Convencional, 1, -

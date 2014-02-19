@@ -1,0 +1,177 @@
+@(sistema: SistemaDePlanejamentoDeCurso, formHandler: Form[form.FormHandler], message: String)
+
+@import helper._
+
+@main("Ciência da Computação UFCG") {
+	
+	
+<div class="wrapper" style="height: 100%;">
+	
+	<body style="background:#80D716">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Posicionar um objeto na tela</title>
+	<style type="text/css">
+	</style>
+	</head>
+	<body>
+	<center>
+	<img src="@routes.Assets.at("images/Capturar.jpg")" width="450px" height="60px" id="pos" />
+	</body>
+	</body>
+	</center>
+	<div align="center">
+		
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Posicionar um objeto na tela</title>
+	<style type="text/css">
+	</style>
+	</head>
+	<body>
+	<img src=>
+	<img src="@routes.Assets.at("/images/Grade1.png")" width="940px" height="400px" alt="logo de 220 por 80 pixel" id="pos" />
+	</body>	
+	</body>
+	<div align="center">
+	
+	
+	</body>
+	<div align="center">
+	<table border="1">
+	<thead><tr><th colspan="10">PLANEJAMENTO DE CURSO</th></tr>	
+	
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Posicionar um objeto na tela</title>
+	<style type="text/css">
+	
+	</style>
+	</head>
+	<body>
+	<img src="" width="0px" height="0px" id="pos">
+	</body>
+	<div align="center">
+	<table border="0">
+	<thead><tr><th colspan="0"></th></tr>	
+		
+		
+		
+	<div id="colunas">
+	 	@for(periodo <- sistema.getPeriodos()) {
+	 	  <br>
+	 	  <nome> ------------------------------------------------------- </nome>
+	 	  <br>
+	 	  <nome> @(sistema.getPeriodos.indexOf(periodo)+1)º periodo </nome>
+	 	  <br>
+	 	  <br>
+		  @for(disciplina <- sistema.getDisciplinasDoPeriodo(sistema.getPeriodos.indexOf(periodo))){
+			 <div id="c1" class="coluna">
+			 <div class="disciplina" name="inputNameDisciplina">
+					<nome>@disciplina.getNome() </nome>
+					<descricao> ---- @disciplina.getNumeroDeCreditos() creditos</descricao>
+					
+			 </div>
+			 </div>
+		  }
+		  <nome> ------------------------------------------------------- </nome><br>
+		  <nome> Total de créditos: @sistema.numeroDeCreditosDoPeriodo(sistema.getPeriodos.indexOf(periodo))</nome>
+		   @if(sistema.periodoComCreditosAbaixoDoLimiteMinimo(sistema.getPeriodos().indexOf(periodo))) {
+				<br>
+				<nome>Número Minimo de creditos não atingido</nome>
+				<br>
+	  		 }
+	  	   <br>
+		}
+		<br>
+		
+		@for(periodo <- sistema.getPeriodos()) {
+			
+			
+		}
+	
+		<div id="c2" class="coluna"></div>
+		<div id="c3" class="coluna"></div>
+		<div id="c4" class="coluna"></div>
+		<div id="c5" class="coluna"></div>
+		<div id="c6" class="coluna"></div>
+		<div id="c7" class="coluna"></div>
+		<div id="c8" class="coluna"></div>
+	</div>
+	
+	@if(message != "") {
+		 <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">alert ("@message.toString()")</SCRIPT>
+	}
+	
+	<br>
+	<div id="ALOCAR">
+	@form(routes.Application.adicionaDisciplinaEmPeriodo()){
+		@if(sistema.getPeriodos.size() > 1) {
+		    <nome> --------------------------- </nome>
+		    <br>
+		    <nome> Alocar Disciplina</nome>
+			<br>
+			<select class="span1" name="inputNameDisciplina" >
+        		@for(disciplina <- sistema.listaDisciplinasDoCurso()) { 
+					<option value="@disciplina.getNome()" name="inputNameDisciplina" >@disciplina.getNome()</option> 
+				}
+        	</select> 
+        	<select class="span1" name="idPeriodo" >
+        		@for(periodo <- sistema.getPeriodos()) {
+        	   		@if(sistema.getPeriodos().indexOf(periodo) != 0) {
+				 		<option value=@(sistema.getPeriodos().indexOf(periodo)+1) name="idPeriodo" >@(sistema.getPeriodos().indexOf(periodo)+1)</option> 
+			   		}
+				}
+        	</select> 
+        	<input type="submit" value="alocar disciplina"> 
+        }
+	}
+	</div>
+	
+	<div id="desalocarDisciplina">
+	@form(routes.Application.desalocarDisciplinaDePeriodo()){
+		@if(sistema.getPeriodos.size() > 1 && !sistema.getDisciplinasAlocadas().isEmpty()) {
+		    <nome> --------------------------- </nome>
+		    <br>
+		    <nome> Desalocar Disciplina</nome>
+			<br>
+			<select class="span1" name="inputNameDisciplina" >
+				@for(disciplina <- sistema.getDisciplinasAlocadas()) { 
+					@if(sistema.indicePeriodoDeDisciplina(disciplina.getNome()) != 0) {
+					    <option value="@disciplina.getNome()" name="inputNameDisciplina" >@disciplina.getNome() ---- periodo : @(sistema.indicePeriodoDeDisciplina(disciplina.getNome())+1)º</option> 
+				    }
+				}
+			</select> 
+			<input type="submit" value="desalocar"> 
+        }
+	}
+	</div>
+	<br>
+	
+	<div id="addperiodos">
+	@if(sistema.getPeriodos.size() > 1) {
+	<script language="JavaScript">
+		<!--
+		function Exibe() {
+			if (@sistema.numeroDeCreditosDoPeriodo(sistema.getPeriodos().size() -1) < 14) {
+				formulario.addPeriodo.disabled = true;
+			} else {
+				formulario.addPeriodo.disabled = false;
+			}
+		}
+		// -->
+	</script>
+	}
+	<body onload="Exibe()">
+	<form name="formulario" 
+		@form(routes.Application.novoPeriodo()) {
+       <input type="submit" name="addPeriodo" value="Adicionar periodo" onload="Exibe()">
+    }
+    </form>
+    </body>
+    </div>
+
+	<br>
+	<br>
+</div>
+}
